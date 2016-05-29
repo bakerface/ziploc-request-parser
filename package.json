@@ -1,0 +1,56 @@
+{
+  "name": "ziploc-request-parser",
+  "version": "1.0.0",
+  "description": "An extension for ziploc that parses express requests",
+  "main": "index.js",
+  "author": "Christopher M. Baker",
+  "license": "MIT",
+  "homepage": "https://github.com/bakerface/ziploc-request-parser",
+  "keywords": [
+    "express",
+    "extensions",
+    "parser",
+    "request",
+    "ziploc"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakerface/ziploc-request-parser.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bakerface/ziploc-request-parser/issues"
+  },
+  "scripts": {
+    "pretest": "xo",
+    "test": "istanbul cover node_modules/.bin/_mocha",
+    "posttest": "istanbul check-coverage --statements 100 --functions 100 --branches 100 --lines 100",
+    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "xo": {
+    "space": true,
+    "globals": [
+      "describe",
+      "it",
+      "beforeEach",
+      "afterEach"
+    ],
+    "rules": {
+      "no-unused-vars": [
+        "error",
+        {
+          "argsIgnorePattern": "^_"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "body-parser": "^1.15.1",
+    "codeclimate-test-reporter": "^0.3.1",
+    "express": "^4.13.4",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.4.5",
+    "supertest": "^1.2.0",
+    "xo": "^0.15.1",
+    "ziploc": "^1.7.1"
+  }
+}
