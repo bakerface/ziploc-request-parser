@@ -1,6 +1,6 @@
 {
   "name": "ziploc-request-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An extension for ziploc that parses express requests",
   "main": "index.js",
   "author": "Christopher M. Baker",

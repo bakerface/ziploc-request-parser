@@ -29,7 +29,6 @@ var zip = ziploc
   .use(requestParser)
   .use({
     getUsernameFromUnvalidatedUsername: function (username) {
-      // todo: do your input validation here
       return username;
     }
   });
